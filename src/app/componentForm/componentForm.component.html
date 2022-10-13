@@ -4,9 +4,9 @@
     <br /><br />
 
     <label>Prenom : </label>
-    <input [disabled]="!valid" [(ngModel)]="prenom" />
+    <input appValiditeString [disabled]="!valid" [(ngModel)]="prenom" />
     <label> Nom : </label>
-    <input [disabled]="!valid" [(ngModel)]="nom" />
+    <input appValiditeString [disabled]="!valid" [(ngModel)]="nom" />
 
     <br /><br />
     <div>
@@ -18,21 +18,22 @@
 
     <label>Email : </label>
     <input [disabled]="!valid" [(ngModel)]="email" placeholder="exemple@mail.com" />
-    <label>  Tel : </label>
-    <input [disabled]="!valid" [(ngModel)]="tel" />
+    <label>Tel : </label>
+    <input appValiditeNumber [disabled]="!valid" [(ngModel)]="tel" />
+    <label> Format : {{ tel | telFormat }}</label>
 
     <br/><br/>
     <label>Adresse : </label>
     <input [disabled]="!valid" [(ngModel)]="adresse" />
 
     <label> Ville : </label>
-    <input [disabled]="!valid" [(ngModel)]="ville" />
+    <input appValiditeString [disabled]="!valid" [(ngModel)]="ville" />
 
     <label> Code postal : </label>
-    <input [disabled]="!valid" [(ngModel)]="cp" />
+    <input appValiditeNumber [disabled]="!valid" [(ngModel)]="cp" />
 
     <label> Pays : </label>
-    <input [disabled]="!valid" [(ngModel)]="pays" />
+    <input appValiditeString [disabled]="!valid" [(ngModel)]="pays" />
     <br /><br />
 
     <b><label> Login : </label></b>

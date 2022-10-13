@@ -12,20 +12,20 @@ export class ComponentFormComponent implements OnInit {
 
   cacher : boolean = true;
 
-  title : String = "Composant initialisé";
-  valid : Boolean = true;
-  prenom : String = "";
-  nom : String = "";
-  genre : String = "";
-  adresse : String = "";
-  ville : String = "";
-  cp : String = "";
-  email : String = "";
-  tel : String = "";
-  pays : String = "";
-  login : String = "";
-  password : String = "";
-  confirmPassword : String = "";
+  title : string = "Composant initialisé";
+  valid : boolean = true;
+  prenom : string = "";
+  nom : string = "";
+  genre : string = "";
+  adresse : string = "";
+  ville : string = "";
+  cp : string = "";
+  email : string = "";
+  tel : string = "";
+  pays : string = "";
+  login : string = "";
+  password : string = "";
+  confirmPassword : string = "";
 
   validationPassword : boolean = true;
   cacherErreur : boolean = true;
